@@ -13,8 +13,8 @@ class SnmpPPConan(ConanFile):
     url = "https://github.com/swissdotnet-sa/conan-snmp_pp"
     homepage = "https://github.com/swissdotnet-sa/snmp_pp"
     author = "Simon Lepasteur <simon.lepasteur@swissdotnet.ch>"
-    license = "CC0-1.0"
-    exports = ["LICENSE.md"]
+    license = "mit"
+    exports = ["LICENSE"]
     _source_subfolder = "source_subfolder"
 
     def configure(self):
