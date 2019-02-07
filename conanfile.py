@@ -5,7 +5,7 @@ from conans import ConanFile, CMake, tools
 import os
 
 
-class LibnameConan(ConanFile):
+class SnmpPPConan(ConanFile):
     name = "snmp_pp"
     version = "3.3.12"
     description = "SNMP library"
