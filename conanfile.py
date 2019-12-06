@@ -18,7 +18,7 @@ class SnmpPPConan(ConanFile):
     _source_subfolder = "source_subfolder"
 
     def configure(self):
-        self.requires("OpenSSL/1.1.1a@conan/stable")
+        self.requires("OpenSSL/1.1.1c@conan/stable")
 
     def source(self):
         source_url = "https://github.com/swissdotnet-sa/snmp_pp"
