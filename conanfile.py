@@ -7,7 +7,7 @@ import os
 
 class SnmpPPConan(ConanFile):
     name = "snmp_pp"
-    version = "3.3.13"
+    version = "3.3.14"
     description = "SNMP library"
     topics = ("snmp")
     url = "https://github.com/swissdotnet-sa/conan-snmp_pp"
@@ -22,7 +22,7 @@ class SnmpPPConan(ConanFile):
 
     def source(self):
         source_url = "https://github.com/swissdotnet-sa/snmp_pp"
-        tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version), sha256="67c6310cdd219966b63a2ab1522d820bccdebbdb6f2b69f25002a0291f98ddbf")
+        tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version), sha256="97b65a5cb453c57e683e7d2a41dd18d82b6f1ef9896ea8af9a4c1b08199d8029")
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self._source_subfolder)
 
